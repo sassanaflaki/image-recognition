@@ -1,2 +1,2 @@
-libgl1
-libglib2.0-0
+python3.10
+python3.10-venv
