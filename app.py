@@ -29,7 +29,6 @@ def finger_status(hand_landmarks):
 
     return fingers
 
-
 class VideoTransformer(VideoTransformerBase):
     def __init__(self):
         self.hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7, min_tracking_confidence=0.7)
@@ -49,7 +48,6 @@ class VideoTransformer(VideoTransformerBase):
 
         cv2.putText(img, finger_text, (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2)
         return img
-
 
 st.title("Real-Time Hand & Finger Detection")
 st.write("Shows which fingers are raised (Thumb, Index, Middle, Ring, Pinky).")
